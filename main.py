@@ -12,16 +12,7 @@ if __name__ == '__main__':
         elif option == "3":
             func.delTask(func.showTasks(True))
         elif option == "4":
-            while True:
-                func.showOther()
-                try:
-                    option = int(input("Wybierz opceję(1-8):"))
-                    if option>0 and option<8:
-                        func.other(option)
-                    else:
-                        break
-                except ValueError:
-                    print("Wybierz prawidłową opcję")
+            func.other()
         elif option == "5":
             print("Program został zakończony")
             break
